@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="hero">
+        <h1>Bienvenido al Simulador de Ventas</h1>
+        <p>Utiliza nuestro simulador avanzado para predecir el rendimiento futuro de tu negocio.</p>
+        <a href="{{ url_for('simulador') }}" class="btn">Iniciar Simulación</a>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h2>Predicciones Exactas</h2>
+            <p>Gracias a nuestro modelo de aprendizaje automático, ofrecemos predicciones precisas basadas en datos históricos.</p>
+        </div>
+        <div class="feature">
+            <h2>Fácil de Usar</h2>
+            <p>Con una interfaz intuitiva, puedes obtener predicciones en segundos, sin necesidad de conocimientos técnicos avanzados.</p>
+        </div>
+        <div class="feature">
+            <h2>Acceso desde cualquier lugar</h2>
+            <p>Accede a nuestro simulador desde tu computadora o dispositivo móvil y obtén resultados en cualquier momento.</p>
+        </div>
+    </section>
+{% endblock %}

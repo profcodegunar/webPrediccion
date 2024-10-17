@@ -1,0 +1,227 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #030122;
+    color: white;
+padding: 15px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #030122;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Hero Section (Inicio) */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.hero .btn:hover {
+    background-color: #003d80;
+}
+
+/* Features Section (Inicio) */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 1.1em;
+}
+
+/* About Us Section (Nosotros) */
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us h1, .about-us h2 {
+    margin-bottom: 15px;
+}
+
+.about-us ul {
+    list-style-type: square;
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+/* Simulator Section (Simulador) */
+.simulator {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.simulator form {
+    margin-top: 20px;
+}
+
+.simulator .form-group {
+    margin-bottom: 15px;
+}
+
+.simulator input {
+    padding: 10px;
+    width: 100%;
+}
+
+.simulator button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.simulator button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section (Contactos) */
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form {
+    margin-top: 20px;
+}
+
+.contact .form-group {
+    margin-bottom: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    height: 100px;
+}
+
+.contact button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    header{
+        margin: 0 auto;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+    .form-group{
+        width: 350px;
+        margin: 0 auto;
+
+    }
+}
